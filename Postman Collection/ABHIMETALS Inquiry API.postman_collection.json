@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "2910107b-a8e3-4dd1-9f7c-d59ac0d4d8ca",
+		"name": "ABHIMETALS Inquiry API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "INQUIRY Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inquirys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inquirys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inquiryById/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inquiryById",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Get By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/inquiry/Adish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inquiry",
+						"Adish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Post Single Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Dead condition\",\r\n     \"inguiryNumber\":\"123876\",\r\n     \"inquiryDate\":\"21042022\",\r\n     \"status\":true,\r\n     \"responsiblePerson\":\"Adish\",\r\n     \"inquirySource\":\"ByCompany\",\r\n     \"attachment\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addInquiry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addInquiry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Post Multiple Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n   {\r\n     \"title\":\"Dead condition\",\r\n     \"inguiryNumber\":\"123876\",\r\n     \"inquiryDate\":\"21042022\",\r\n     \"status\":true,\r\n     \"responsiblePerson\":\"Adish\",\r\n     \"inquirySource\":\"ByCompany\",\r\n     \"attachment\":\"\"\r\n}\r\n,\r\n{\r\n     \"title\":\"Dead condition\",\r\n     \"inguiryNumber\":\"123876\",\r\n     \"inquiryDate\":\"21042022\",\r\n     \"status\":true,\r\n     \"responsiblePerson\":\"Adish\",\r\n     \"inquirySource\":\"ByCompany\",\r\n     \"attachment\":\"\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addInquirys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addInquirys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Update BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\":1,\r\n     \"title\":\"Dead condition\",\r\n     \"inguiryNumber\":\"123876\",\r\n     \"inquiryDate\":\"21042022\",\r\n     \"status\":true,\r\n     \"responsiblePerson\":\"Adish\",\r\n     \"inquirySource\":\"ByCompany\",\r\n     \"attachment\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inquiryupdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inquiryupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INQUIRY Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/deleteInquiry/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deleteInquiry",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

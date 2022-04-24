@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "ac0d63af-3fd5-4268-8f1f-603c64196ffc",
+		"name": "ABHIMETALS Product API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/productById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"productById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Get By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/product/Ansari",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"Ansari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Post Single Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\" : \"Ansari\",\r\n     \"category\":\"Mobile\",\r\n     \"description\":\"This is a Good profuct\",\r\n     \"attachment\":\"\",\r\n     \"grossRate\":3211.34,\r\n     \"netwait\":5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Post Multiple Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n     \"name\" : \"Jay\",\r\n     \"category\":\"Mobile\",\r\n     \"description\":\"This is a Good profuct\",\r\n     \"attachment\":\"\",\r\n     \"grossRate\":3211.34,\r\n     \"netwait\":5\r\n}\r\n,\r\n{\r\n     \"name\" : \"Aman\",\r\n     \"category\":\"Mobile\",\r\n     \"description\":\"This is a Good profuct\",\r\n     \"attachment\":\"\",\r\n     \"grossRate\":3211.34,\r\n     \"netwait\":5\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"2\",       \r\n     \"name\" : \"Ansari\",\r\n     \"category\":\"Mobile\",\r\n     \"description\":\"This is a Good profuct\",\r\n     \"attachment\":\"\",\r\n     \"grossRate\":3211.34,\r\n     \"netwait\":5\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update BY NAME",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"2\",\r\n     \"name\" : \"Adish\",\r\n     \"category\":\"Mobile\",\r\n     \"description\":\"This is a Good profuct\",\r\n     \"attachment\":\"\",\r\n     \"grossRate\":3211.34,\r\n     \"netwait\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/updatebyname/Ansari",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"updatebyname",
+						"Ansari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger API DOC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/v3/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "19f7daf9-a8fb-44e1-bd02-3a52ea111890",
+		"name": "ABHIMETALS Customer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customerById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customerById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Get By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customer/Adish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer",
+						"Adish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Post Single Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Adish\",\r\n     \"phoneNumber\":\"9717438377\",\r\n     \"modifiedDate\":\"20042022\",\r\n     \"address\":\"New Delhi Cnadplace\",\r\n     \"state\":\"Delhi\",\r\n     \"country\":\"India\",\r\n     \"city\":\"Noida\",\r\n     \"panNumber\":\"BANARAD8788K\",\r\n     \"gstNumber\":\"112939384GSS45\",\r\n     \"emailId\":\"adishkumar1234@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Post Multiple Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\":\"Adish\",\r\n     \"phoneNumber\":\"9717438377\",\r\n     \"modifiedDate\":\"20042022\",\r\n     \"address\":\"New Delhi Cnadplace\",\r\n     \"state\":\"Delhi\",\r\n     \"country\":\"India\",\r\n     \"city\":\"Noida\",\r\n     \"panNumber\":\"BANARAD8788K\",\r\n     \"gstNumber\":\"112939384GSS45\",\r\n     \"emailId\":\"adishkumar1234@gmail.com\"\r\n}\r\n,\r\n{\r\n    \"name\":\"Adish\",\r\n     \"phoneNumber\":\"9717438377\",\r\n     \"modifiedDate\":\"20042022\",\r\n     \"address\":\"New Delhi Cnadplace\",\r\n     \"state\":\"Delhi\",\r\n     \"country\":\"India\",\r\n     \"city\":\"Noida\",\r\n     \"panNumber\":\"BANARAD8788K\",\r\n     \"gstNumber\":\"112939384GSS45\",\r\n     \"emailId\":\"adishkumar1234@gmail.com\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Update BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 1,\r\n    \"name\": \"Adish\",\r\n    \"phoneNumber\": \"9717438377\",\r\n    \"modifiedDate\": \"1970-01-01T05:34:02.000+00:00\",\r\n    \"address\": \"New Delhi Cnadplace\",\r\n    \"state\": \"Delhi\",\r\n    \"city\": \"Noida\",\r\n    \"country\": \"India\",\r\n    \"panNumber\": \"BANARAD8788K\",\r\n    \"gstNumber\": \"112939384GSS45\",\r\n    \"emailId\": \"adishkumar1234@gmail.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/customerupdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customerupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/deletecustomer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deletecustomer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

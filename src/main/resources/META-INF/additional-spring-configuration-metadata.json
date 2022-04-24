@@ -1,0 +1,87 @@
+{"properties": [
+  {
+    "name": "springdoc.api-docs.path",
+    "type": "java.lang.String",
+    "description": "A description for 'springdoc.api-docs.path'"
+  },
+  {
+    "name": "swagger.defaultModelExpandDepth",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.defaultModelExpandDepth'"
+  },
+  {
+    "name": "swagger.filter",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.filter'"
+  },
+  {
+    "name": "swagger.maxDisplayedTags",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.maxDisplayedTags'"
+  },
+  {
+    "name": "swagger.showExtensions",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.showExtensions'"
+  },
+  {
+    "name": "swagger.displayRequestDuration",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.displayRequestDuration'"
+  },
+  {
+    "name": "swagger.displayOperationId",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.displayOperationId'"
+  },
+  {
+    "name": "swagger.defaultModelsExpandDepth",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.defaultModelsExpandDepth'"
+  },
+  {
+    "name": "swagger.enableUrlTemplating",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.enableUrlTemplating'"
+  },
+  {
+    "name": "swagger.useDefaultResponseMessages",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.useDefaultResponseMessages'"
+  },
+  {
+    "name": "swagger.description",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.description'"
+  },
+  {
+    "name": "api.version",
+    "type": "java.lang.String",
+    "description": "A description for 'api.version'"
+  },
+  {
+    "name": "swagger.title",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.title'"
+  },
+  {
+    "name": "swagger.deepLinking",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.deepLinking'"
+  },
+  {
+    "name": "springfox.documentation.swagger.v2.path",
+    "type": "java.lang.String",
+    "description": "A description for 'springfox.documentation.swagger.v2.path'"
+  },
+  {
+    "name": "swagger.host.url",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.host.url'"
+  },
+  {
+    "name": "app.api.swagger.enable",
+    "type": "java.lang.String",
+    "description": "A description for 'app.api.swagger.enable'"
+  }
+]}
